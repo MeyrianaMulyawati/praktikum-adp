@@ -1,0 +1,50 @@
+Nama : Meyriana Mulyawati
+Nim  : 2310433019
+Shift : 4
+
+program MenghitungVolumeDanLuasPermukaanBola;
+uses crt;
+var
+  r:integer;
+  Volume,Luas_Permukaan:real;
+begin
+clrscr;
+  writeln('Nama = Meyriana Mulyawati');
+  Writeln('NIM  = 2310433019');
+  writeln;
+  write('jari-jari=');
+  readln(r);
+  writeln;
+  Volume:=(4/3)*pi*r*r*r;
+  Luas_Permukaan:=4*pi*r*r;
+  WriteLn('Volume Bola=',Volume:10:2);
+  WriteLn('Luas Permukaan Bola=',Luas_Permukaan:10:2);
+readln;
+end.
+
+
+
+uses crt;
+var
+        rata, ragam, S :real;
+        a, b, c, d, e :integer;
+begin
+clrscr;
+        writeln('Nama : Meyriana Mulyawati');
+        writeln('NIM  : 2310433019');
+        writeln;
+        writeln('Input Nilai x');
+        write('x1 = '); readln(a);
+        write('x2 = '); readln(b);
+        write('x3 = '); readln(c);
+        write('x4 = '); readln(d);
+        write('x5 = '); readln(e);
+        writeln;
+        rata :=(a+b+c+d+e)/5;
+        ragam :=((sqr(a-rata))+(sqr(b-rata))+(sqr(c-rata))+(sqr(d-rata))+(sqr(e-rata)))/5;
+        S := sqrt(ragam);
+        writeln('Rata-rata      = ',rata:10:2);
+        writeln('Ragam          = ',ragam:10:2);
+        writeln('Simpangan Baku = ',S:10:2);
+readln;
+end.
